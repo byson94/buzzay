@@ -430,6 +430,7 @@ static void keybinding_handler(struct buzzay_server *server, void *data) {
                 current_layout_node->toplevel = next_layout_node->toplevel;
                 next_layout_node->toplevel = temp_toplevel;
                 arrange_workspaces(server);
+                focus_toplevel(current_toplevel);
             }
         }
     }
