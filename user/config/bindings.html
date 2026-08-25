@@ -269,14 +269,14 @@
 <p>Keybindings are configured under the <code class="docutils literal notranslate"><span class="pre">[bindings]</span></code> table. They can be configured in two formats:
 array format, and table format.</p>
 <p><strong>Array Format:</strong></p>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Key1+Key2&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Action&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Argument&quot;</span><span class="p">]</span><span class="w"> </span><span class="c1"># There can be multiple arguments.</span>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="s2">"Key1+Key2"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"Action"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Argument"</span><span class="p">]</span><span class="w"> </span><span class="c1"># There can be multiple arguments.</span>
 </pre></div>
 </div>
 <p>All the elements in this array must always be a string.</p>
 <p><strong>Table Format:</strong></p>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Key1+Key2&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Action&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">arg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Argument&quot;</span>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="s2">"Key1+Key2"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">"Action"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">arg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">"Argument"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -302,12 +302,12 @@ The keycode must be the raw scancode for the desired key used in the linux kerne
 <p>Each keybinding can peform an action, whether that be running a shell command, closing an application,
 or switching the workspace. As shown above, they are an array or table like so:</p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Array Version</span>
-<span class="n">kb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Action&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Argument&quot;</span><span class="p">]</span>
+<span class="n">kb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"Action"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Argument"</span><span class="p">]</span>
 
 <span class="c1"># Table Version</span>
 <span class="n">kb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Action&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">arg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Argument&quot;</span>
+<span class="w">    </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">"Action"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">arg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">"Argument"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -317,8 +317,8 @@ or switching the workspace. As shown above, they are an array or table like so:<
 must be the argument.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="c1"># Format: keybinding = [&quot;Action&quot;, &quot;Argument&quot;]</span>
-<span class="s2">&quot;Super+Return&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;spawn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;kitty&quot;</span><span class="p">]</span>
+<span class="c1"># Format: keybinding = ["Action", "Argument"]</span>
+<span class="s2">"Super+Return"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"spawn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"kitty"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -327,7 +327,7 @@ must be the argument.</p>
 <p>Close the currently active window. Takes no argument.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+Q&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;close-active-window&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Q"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"close-active-window"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -342,7 +342,7 @@ must be the argument.</p>
 </ul>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+Right&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;focus-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Right"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"focus-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"right"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -351,7 +351,7 @@ must be the argument.</p>
 <p>Move the focused window. Takes a direction as an argument (same options as <code class="docutils literal notranslate"><span class="pre">focus-window</span></code>).</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+Shift+Right&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;move-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Shift+Right"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"move-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"right"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -360,7 +360,7 @@ must be the argument.</p>
 <p>Move the focused window to a workspace. Takes the workspace index to move to as the argument.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+Shift+1&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
+<span class="s2">"Super+Shift+1"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -369,7 +369,7 @@ must be the argument.</p>
 <p>Switch the currently active workspace. The argument should be the workspace number.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+1&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">]</span>
+<span class="s2">"Super+1"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"1"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -378,7 +378,7 @@ must be the argument.</p>
 <p>Toggle the monocle layout. Takes no argument.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+M&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;toggle-monocle&quot;</span><span class="p">]</span>
+<span class="s2">"Super+M"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"toggle-monocle"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -387,7 +387,7 @@ must be the argument.</p>
 <p>Cycle to the next window in the monocle. Takes no argument.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+J&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;cycle-monocle&quot;</span><span class="p">]</span>
+<span class="s2">"Super+J"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"cycle-monocle"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -396,7 +396,7 @@ must be the argument.</p>
 <p>Quit the compositor. Takes no argument.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[bindings]</span>
-<span class="s2">&quot;Super+Escape&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;quit-compositor&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Escape"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"quit-compositor"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
@@ -406,8 +406,8 @@ must be the argument.</p>
 <p>A keybinding can be configured if you are using the table format. This section will cover all the
 options you can configure inside a table.</p>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">kb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Action&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">arg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;Argument&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">action</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">"Action"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">arg</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">"Argument"</span><span class="p">,</span>
 <span class="w">    </span><span class="c1"># other options here...</span>
 <span class="p">}</span>
 </pre></div>

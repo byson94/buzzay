@@ -270,21 +270,21 @@
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># == Core configs ==</span>
 
 <span class="k">[core]</span>
-<span class="c1"># &#39;click&#39; or &#39;hover&#39;</span>
-<span class="n">focus-on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;hover&quot;</span><span class="w"> </span>
+<span class="c1"># 'click' or 'hover'</span>
+<span class="n">focus-on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"hover"</span><span class="w"> </span>
 <span class="c1"># default layout mode (tiling or moncole)</span>
-<span class="n">layout-mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;tiling&quot;</span><span class="w"> </span>
+<span class="n">layout-mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tiling"</span><span class="w"> </span>
 <span class="c1"># shell commands to spawn on startup</span>
 <span class="n">spawn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;wlsunset -t 4000 -T 4001&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;kitty&quot;</span>
+<span class="w">    </span><span class="s2">"wlsunset -t 4000 -T 4001"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"kitty"</span>
 <span class="p">]</span>
 
 <span class="c1"># == Cursor ==</span>
 
 <span class="k">[cursor]</span>
 <span class="c1"># set your cursor theme here</span>
-<span class="n">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;capitaine-cursors&quot;</span>
+<span class="n">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"capitaine-cursors"</span>
 <span class="c1"># set your cursor size here</span>
 <span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">24</span>
 
@@ -302,9 +302,9 @@
 <span class="c1"># How thick the window border should be</span>
 <span class="n">thickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
 <span class="c1"># The border color of the focused window</span>
-<span class="n">active</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#eee&quot;</span>
+<span class="n">active</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#eee"</span>
 <span class="c1"># The border color of the non-focused windows</span>
-<span class="n">inactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#aaa&quot;</span>
+<span class="n">inactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"#aaa"</span>
 <span class="w"> </span>
 <span class="k">[candy.blur]</span>
 <span class="c1"># enable the blur effect (only visible if opacity is lower than 1.0)</span>
@@ -321,49 +321,49 @@
 <span class="c1"># == Keybindings ==</span>
 
 <span class="k">[bindings]</span>
-<span class="s2">&quot;Super+Return&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;spawn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;kitty&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Q&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;close-active-window&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Return"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"spawn"</span><span class="p">,</span><span class="w"> </span><span class="s2">"kitty"</span><span class="p">]</span>
+<span class="s2">"Super+Q"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"close-active-window"</span><span class="p">]</span>
 
 <span class="c1"># Switch workspace (max 9 workspaces)</span>
-<span class="s2">&quot;Super+1&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+2&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+3&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+4&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;4&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+5&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+6&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;6&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+7&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;7&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+8&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;8&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+9&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;switch-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;9&quot;</span><span class="p">]</span>
+<span class="s2">"Super+1"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"1"</span><span class="p">]</span>
+<span class="s2">"Super+2"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"2"</span><span class="p">]</span>
+<span class="s2">"Super+3"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"3"</span><span class="p">]</span>
+<span class="s2">"Super+4"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"4"</span><span class="p">]</span>
+<span class="s2">"Super+5"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"5"</span><span class="p">]</span>
+<span class="s2">"Super+6"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"6"</span><span class="p">]</span>
+<span class="s2">"Super+7"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"7"</span><span class="p">]</span>
+<span class="s2">"Super+8"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"8"</span><span class="p">]</span>
+<span class="s2">"Super+9"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"switch-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"9"</span><span class="p">]</span>
 
 <span class="c1"># Move window to workspace (max 9 workspaces)</span>
-<span class="s2">&quot;Super+Shift+1&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+2&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+3&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+4&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;4&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+5&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+6&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;6&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+7&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;7&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+8&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;8&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+9&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;window-to-workspace&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;9&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Shift+1"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"1"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+2"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"2"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+3"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"3"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+4"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"4"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+5"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"5"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+6"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"6"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+7"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"7"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+8"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"8"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+9"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"window-to-workspace"</span><span class="p">,</span><span class="w"> </span><span class="s2">"9"</span><span class="p">]</span>
 
 <span class="c1"># Monocle layout</span>
-<span class="s2">&quot;Super+M&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;toggle-monocle&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+J&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;cycle-monocle&quot;</span><span class="p">]</span>
+<span class="s2">"Super+M"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"toggle-monocle"</span><span class="p">]</span>
+<span class="s2">"Super+J"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"cycle-monocle"</span><span class="p">]</span>
 
 <span class="c1"># Focusing Windows</span>
-<span class="s2">&quot;Super+Right&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;focus-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Left&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;focus-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Up&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;focus-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;up&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Down&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;focus-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;down&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Right"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"focus-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"right"</span><span class="p">]</span>
+<span class="s2">"Super+Left"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"focus-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"left"</span><span class="p">]</span>
+<span class="s2">"Super+Up"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"focus-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"up"</span><span class="p">]</span>
+<span class="s2">"Super+Down"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"focus-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"down"</span><span class="p">]</span>
 
 <span class="c1"># Moving windows</span>
-<span class="s2">&quot;Super+Shift+Right&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;move-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+Left&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;move-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+Up&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;move-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;up&quot;</span><span class="p">]</span>
-<span class="s2">&quot;Super+Shift+Down&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;move-window&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;down&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Shift+Right"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"move-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"right"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+Left"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"move-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"left"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+Up"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"move-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"up"</span><span class="p">]</span>
+<span class="s2">"Super+Shift+Down"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"move-window"</span><span class="p">,</span><span class="w"> </span><span class="s2">"down"</span><span class="p">]</span>
 
 <span class="c1"># Exit the compositor</span>
-<span class="s2">&quot;Super+Escape&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;quit-compositor&quot;</span><span class="p">]</span>
+<span class="s2">"Super+Escape"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"quit-compositor"</span><span class="p">]</span>
 </pre></div>
 </div>
 </section>
